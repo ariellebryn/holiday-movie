@@ -1,0 +1,238 @@
+<html>
+  <head>
+    <title>Christmas Movie Generator</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Piazzolla:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Langar&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      html,
+      body,
+      main {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+      }
+
+      html {
+        background-color: #d2dfd3;
+        color: #345827;
+        background-image: url("snowflake.png");
+        background-repeat: repeat;
+      }
+
+      main {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .text {
+        max-width: 650px;
+        font-size: 1.5em;
+        text-align: center;
+        line-height: 2.5em;
+        font-family: "Piazzolla", serif;
+        margin-bottom: 100px;
+      }
+
+      span {
+        border-bottom: 2px solid #345827;
+        margin: 0 5px;
+        position: relative;
+      }
+
+      span::after {
+        font-size: 0.5em;
+        position: absolute;
+        margin-top: 2.4em;
+        text-transform: uppercase;
+        font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
+      }
+
+      span.adjective::after {
+        margin-left: -60px;
+        content: "adjective";
+      }
+
+      span.occupation::after {
+        margin-left: -70px;
+        content: "occupation";
+      }
+
+      span.goal::after {
+        margin-left: -30px;
+        content: "goal";
+      }
+
+      span.attribute::after {
+        margin-left: -60px;
+        content: "attribute";
+      }
+
+      span.sentence_end {
+        margin-right: 0;
+      }
+
+      .generate_button button {
+        padding: 12px;
+        border: 1px solid #000;
+        box-shadow: 3px 4px 0 0 #000;
+        font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
+        font-size: 1.3em;
+        font-weight: 400;
+        transition: 0.2s;
+      }
+
+      .generate_button button:hover {
+        box-shadow: 8px 10px 0 0 #000;
+      }
+
+      button:focus {
+        outline: 0;
+      }
+
+      button:active {
+        transform: scale(0.99);
+      }
+
+      .characters {
+        height: 300px;
+        width: 200px;
+        /* border-radius: 200px; */
+        background-color: #eee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #628556;
+        /* background-image: url("inverse_speckle.jpg"); */
+        /* background-size: 100px 100px; */
+        background-repeat: repeat;
+        /* border-radius: 10px; */
+      }
+
+      .head {
+        background-color: #e8b3af;
+        height: 100px;
+        width: 100px;
+        border-radius: 100px;
+        /* border: 3px solid #212121; */
+      }
+
+      .title {
+        font-family: "Langar", serif;
+        font-size: 4em;
+        margin-bottom: 100px;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!-- <div class="characters">
+        <div class="head"></div>
+      </div> -->
+      <div class="title">The Christmas Movie</div>
+
+      <div class="text">
+        <span class="randomize adjective sentence_start">dysfunctional</span>
+        <span class="randomize occupation">chess prodigy</span>
+        <span class="randomize goal sentence_end"
+          >wants to impress her mom with a thriving indoor spearmint
+          garden</span
+        >. Along the way they meet a
+        <span class="randomize occupation">Buzzfeed journalist</span> who
+        <span class="randomize attribute sentence_end">
+          doesn't know how beautiful she is, especially because she wears
+          glasses</span
+        >.
+      </div>
+
+      <div class="generate_button">
+        <button onclick="generateMovie()">Rewrite this movie!</button>
+      </div>
+    </main>
+
+    <script>
+      /** CHARACTER **/
+
+      /** STORY **/
+      let adjectives = [
+        "dysfunctional",
+        "cold but needy",
+        "humble",
+        "brilliant but lonely",
+      ];
+      let occupations = [
+        "chess prodigy",
+        "Buzzfeed journalist",
+        "mail carrier",
+        "podcaster",
+        "dating app consultant",
+      ];
+      let goals = [
+        "wants to impress her mom with a thriving indoor spearmint garden",
+        "can't seem to find the right girl on Hinge and settle down",
+        "just wants to have the best holiday display for his kids",
+        "is having trouble getting her savory popcorn brand off the ground",
+      ];
+      let attributes = [
+        "doesn't know how beautiful she is, especially because she wears glasses",
+        "was forced to take a break this Christmas to care for her grandmother back in her hometown",
+        "is trying to help people stay healthy this holiday season",
+        "is counting on her new Christmas album to revive her career",
+      ];
+
+      let classDict = {
+        adjective: adjectives,
+        occupation: occupations,
+        goal: goals,
+        attribute: attributes,
+      };
+
+      let used = [];
+
+      var randomizable = document.getElementsByClassName("randomize");
+
+      var getRandomArrayValue = (arr) => {
+        return arr[Math.floor(Math.random() * arr.length)];
+      };
+
+      var generateMovie = () => {
+        for (const element of randomizable) {
+          let arr = classDict[element.classList[1]];
+          if (arr) {
+            let value = getRandomArrayValue(arr);
+            while (used.includes(value)) {
+              value = getRandomArrayValue(arr);
+            }
+
+            used.push(value);
+
+            if (element.classList.contains("sentence_start")) {
+              value = value[0].toUpperCase() + value.substring(1);
+            }
+            element.innerHTML = value;
+          }
+        }
+
+        used = [];
+      };
+
+      generateMovie();
+    </script>
+  </body>
+</html>
