@@ -69,12 +69,9 @@ situation: situations,
 tjItem: tjItems,
 };
 
-function load() {
-    var someData_notJSON = JSON.parse(data);
-    console.log(someData_notJSON[0].red);
-}
-
 /* GENERATOR */
+
+let storyInfo = {};
 
 const charLimit = 2;
 
@@ -101,9 +98,9 @@ return value;
 }
 
 var addCorrectPronouns = (str, pnouns) => {
-str = str.replace("{possessive}", pnouns.possessive);
-str = str.replace("{subject}", pnouns.subject);
-return str.replace("{object}", pnouns.object);
+str = str.replaceAll("{possessive}", pnouns.possessive);
+str = str.replaceAll("{subject}", pnouns.subject);
+return str.replaceAll("{object}", pnouns.object);
 }
 
 var replaceTheyMeet = (identity) => {
@@ -125,11 +122,15 @@ theyMeet.innerHTML = value;
 }
 
 var generateMovie = () => {
+    if (Object.keys(storyInfo).length === 0) {
+        return;
+    }
+
     used = [];
 
     let characters = [];
     for (let i = 0; i < charLimit; i++) {
-        characters[i] = getUniqueRandomArrayValue(nameActors);
+        characters[i] = getUniqueRandomArrayValue(storyInfo.nameactor);
         characters[i].pronouns = pronouns[characters[i].identity];
     }
 
@@ -137,12 +138,12 @@ var generateMovie = () => {
         let type = element.dataset.type;
         let charNum = element.dataset.character ?? 0;
 
-        if (type == "nameActor") {
+        if (type == "nameactor") {
             element.innerHTML = characters[charNum].name;
             continue;
         }
     
-        let arr = classDict[type];
+        let arr = storyInfo[type];
         if (arr) {
             let value = getUniqueRandomArrayValue(arr); 
             
@@ -163,8 +164,11 @@ var generateMovie = () => {
     replaceTheyMeet(characters[0].identity);
 };
 
-generateMovie();
-
-d3.json('story.json', function(data) {
-    console.log(data);
-});
+d3.json('./data/story.json')
+    .then(function(data){
+        storyInfo = data;
+        generateMovie();
+    })
+    .catch(function(error) {
+        console.error(error);
+    });

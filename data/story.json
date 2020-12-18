@@ -11,6 +11,62 @@
         {
             "name": "Karen (Tessa Thompson)",
             "identity": "femme"
+        },
+        {
+            "name": "Amy (Kristen Stewart)",
+            "identity": "femme"
+        },
+        {
+            "name": "John (Matt Bomer)",
+            "identity": "masc"
+        },
+        {
+            "name": "Karen (Tessa Thompson)",
+            "identity": "femme"
+        },
+        {
+            "name": "Olivia (Aya Cash)",
+            "identity": "femme"
+        },
+        {
+            "name": "Tracy (Kate McKinnon)",
+            "identity": "femme"
+        },
+        {
+            "name": "Noel (Alia Shawkat)",
+            "identity": "nb"
+        },
+        {
+            "name": "Andrew (Billy Eichner)",
+            "identity": "masc"
+        },
+        {
+            "name": "Hannah (Jenny Slate)",
+            "identity": "femme"
+        },
+        {
+            "name": "Dylan (Nathan Fielder)",
+            "identity": "nb"
+        },
+        {
+            "name": "Kayleigh (Olivia Jade)",
+            "identity": "femme"
+        },
+        {
+            "name": "Nora (Liza Koshy)",
+            "identity": "femme"
+        },
+        {
+            "name": "John (Andrew Rannells)",
+            "identity": "masc"
+        },
+        {
+            "name": "Rana (Lena Waithe)",
+            "identity": "nb"
+        },
+        {
+            "name": "Carmen (Sara Ramirez)",
+            "identity": "nb"
         }
     ],
     "adjective": [
@@ -30,14 +86,35 @@
         "Tone-deaf",
         "Arrogant",
         "Gruff",
-        "Cynical"
+        "Cynical",
+        "entitled",
+        "fearless",
+        "wacky",
+        "adrenaline junkie",
+        "observant",
+        "stable",
+        "naive",
+        "clever",
+        "miserly",
+        "assertive",
+        "witty",
+        "overly clean",
+        "competitive",
+        "easily-bored",
+        "warm but absent",
+        "chronically late",
+        "cowardly",
+        "absentminded",
+        "excitable",
+        "worldly",
+        "sheltered"
     ],
     "occupation": [
         "college professor",
         "start-up founder",
         "essential worker",
         "Uber driver",
-        "Postmates delivery-woman",
+        "Postmates courier",
         "architect",
         "dating app consultant",
         "big cat enthusiast",
@@ -53,7 +130,8 @@
         "tarot card reader",
         "D&D dungeon master",
         "improv teacher",
-        "art school student"
+        "art school student",
+        "heir to the throne"
     ],
     "situation": [
         "is worried Salvation Army donations will get in the way of {possessive} viral online campaign to get rid of pennies",
@@ -76,27 +154,55 @@
     "occupationlong": [
         "an Instagram photographer sacrificing {possessive} art for followers to afford gifts for {possessive} nieces and nephews",
         "a dieting food stylist trying to maintain {possessive} waistline while getting the season's Tasty videos out in time",
-        "a down-on-their luck SoundCloud rapper who is counting on {possessive} new Christmas album to revive {possessive} career",
+        "a down-on-{possessive} luck SoundCloud rapper who is counting on {possessive} new Christmas album to revive {possessive} career",
         "a craft beer maker whose special Christmas brew is the talk of the town",
         "a Peloton trainer who is trying to help people stay healthy this holiday season",
-        "a Buzzfeed journalist who doesn't know how beautiful {possessive} is, especially because she wears glasses",
+        "a Buzzfeed journalist who doesn't know {possessive} own beauty, especially because of {possessive} glasses",
         "the star of a new IGTV show forced to take a break this Christmas to care for {possessive} grandmother back in {possessive} hometown",
         "an out of work Broadway dancer trying to choreograph the next viral dance sensation",
         "a curmudgeonly poll worker with a paralyzing fear of stickers",
         "the founder of the largest Nathan Fielder Fan Forum on Facebook",
         "a ghost hunter trying to invent a mask that will protect phantoms from COVID-19",
-        "a choreographer who does not understand why the Ratatoille musical is more popular than their WALL-E mime show",
+        "a choreographer who doesn't understand why the Ratatouille musical is more popular than {possessive} WALL-E mime show",
         "a stand-up comedian now trying to make it as a Zoom DJ for socially distanced corporate holiday parties"
     ],
     "tjitem": [
         "Festive Corn Tortilla Chips ($2.99)",
-        "Dark Chocolate Covered Peppermit Joe-Joes ($3.99)",
+        "Dark Chocolate Covered Peppermint Joe-Joes ($3.99)",
         "Mini Gingerbread People ($3.49)",
         "Black Truffle Cashew Pesto",
         "Non-Dairy Mint Chip Bon-Bons",
         "Organic Sweet & Spicy Mustard Sauce",
         "Holiday Vegetable Hash",
         "Bulgogi Beef Fried Rice with Kimchi",
-        "Cauliflower Crisps"
+        "Cauliflower Crisps",
+        "Rosé Water",
+        "Everything Croissant Rolls ($3.99)",
+        "Steamed Pork & Ginger Soup Dumplings",
+        "Keto Fudge Bites",
+        "Kale Gnocchi",
+        "Cold Brew Latte Dessert Bars",
+        "Green Goddess Dip",
+        "Chocolate Lava Gnocchi",
+        "Cinnamon Bun Spread",
+        "Mac and Cheese Bites",
+        "Norwegian Crispbread",
+        "Mandarin Orange Chicken",
+        "Joe-Joe's Chocolate Vanilla Creme Cookies",
+        "Mini Peppermint Meringues",
+        "Gingerbread Coffee",
+        "Gluten-Free Italian Panettone",
+        "Chocolate Coins of the World",
+        "Nog Protein Beverage Smoothie",
+        "Gingerbread House Kit ($7.99)",
+        "Crispy Crunchy Ginger Chunk Cookies",
+        "Charcuterie Pinwheels",
+        "Almond Nog ($2.99)",
+        "Cocoa Chile Spiced Pecans ($4.49)",
+        "Hand-Braided Challah ($3.99)",
+        "Sweet & Salty Snack Mix ($3.99)",
+        "Candy Cane Joe-Joe's Dark Chocolate Bar",
+        "Mini Cheesecake Cones",
+        "Truffle Dip ($4.99)"
     ]
 }
