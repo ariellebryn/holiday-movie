@@ -1,0 +1,102 @@
+{
+    "nameactor": [
+        {
+            "name": "Mary (Aubrey Plaza)",
+            "identity": "femme"
+        },
+        {
+            "name": "Dean (Timothee Chalamet)",
+            "identity": "masc"
+        },
+        {
+            "name": "Karen (Tessa Thompson)",
+            "identity": "femme"
+        }
+    ],
+    "adjective": [
+        "Brilliant but lonely",
+        "Always-busy",
+        "Frantic and frenetic",
+        "Humble",
+        "Small town",
+        "Grumpy but kind",
+        "Eligible but picky",
+        "Extremely loud",
+        "Cold but needy",
+        "Big-city",
+        "Overachieving",
+        "Dysfunctional",
+        "Selfish",
+        "Tone-deaf",
+        "Arrogant",
+        "Gruff",
+        "Cynical"
+    ],
+    "occupation": [
+        "college professor",
+        "start-up founder",
+        "essential worker",
+        "Uber driver",
+        "Postmates delivery-woman",
+        "architect",
+        "dating app consultant",
+        "big cat enthusiast",
+        "TikTok sensation",
+        "chess prodigy",
+        "Bachelor runner-up",
+        "first responder",
+        "mail carrier",
+        "Modern Love essayist",
+        "podcaster",
+        "B&B owner",
+        "Zoom teacher",
+        "tarot card reader",
+        "D&D dungeon master",
+        "improv teacher",
+        "art school student"
+    ],
+    "situation": [
+        "is worried Salvation Army donations will get in the way of {possessive} viral online campaign to get rid of pennies",
+        "can't seem to find the right girl on Hinge and settle down",
+        "just wants to have the best holiday display for {possessive} kids",
+        "wants to impress {possessive} mom with a thriving indoor spearmint garden",
+        "quits {possessive} job to manage an up-and-coming boyband",
+        "is having trouble getting {possessive} savory popcorn brand off the ground",
+        "has to move after accidentally killing {possessive} neighbor's holographic campaign",
+        "is never able to get {possessive} sourdough quite crusty enough",
+        "can't stop buying houseplants, even though they all seem to die",
+        "is trying to get {possessive} Substack newsletter off the ground",
+        "wants to get out of {possessive} brother's wedding that inexplicably wasn't canceled despite a global pandemic",
+        "is trying to solve a murder involving a threatening letter and a goat",
+        "got stuck on a cruise ship after the lockdown",
+        "is accidentally locked in a Broadway theater just as shelter-in-place begins",
+        "is crafting the perfect Survivor audition tape",
+        "is stuck in a time loop on the day of {possessive} friend's two hour amateur virtual improv show"
+    ],
+    "occupationlong": [
+        "an Instagram photographer sacrificing {possessive} art for followers to afford gifts for {possessive} nieces and nephews",
+        "a dieting food stylist trying to maintain {possessive} waistline while getting the season's Tasty videos out in time",
+        "a down-on-their luck SoundCloud rapper who is counting on {possessive} new Christmas album to revive {possessive} career",
+        "a craft beer maker whose special Christmas brew is the talk of the town",
+        "a Peloton trainer who is trying to help people stay healthy this holiday season",
+        "a Buzzfeed journalist who doesn't know how beautiful {possessive} is, especially because she wears glasses",
+        "the star of a new IGTV show forced to take a break this Christmas to care for {possessive} grandmother back in {possessive} hometown",
+        "an out of work Broadway dancer trying to choreograph the next viral dance sensation",
+        "a curmudgeonly poll worker with a paralyzing fear of stickers",
+        "the founder of the largest Nathan Fielder Fan Forum on Facebook",
+        "a ghost hunter trying to invent a mask that will protect phantoms from COVID-19",
+        "a choreographer who does not understand why the Ratatoille musical is more popular than their WALL-E mime show",
+        "a stand-up comedian now trying to make it as a Zoom DJ for socially distanced corporate holiday parties"
+    ],
+    "tjitem": [
+        "Festive Corn Tortilla Chips ($2.99)",
+        "Dark Chocolate Covered Peppermit Joe-Joes ($3.99)",
+        "Mini Gingerbread People ($3.49)",
+        "Black Truffle Cashew Pesto",
+        "Non-Dairy Mint Chip Bon-Bons",
+        "Organic Sweet & Spicy Mustard Sauce",
+        "Holiday Vegetable Hash",
+        "Bulgogi Beef Fried Rice with Kimchi",
+        "Cauliflower Crisps"
+    ]
+}
