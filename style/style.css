@@ -5,6 +5,15 @@ main {
   box-sizing: border-box;
   overflow-x: visible; }
 
+*::-webkit-scrollbar {
+  display: none; }
+
+* {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */ }
+
 html {
   background-color: #d2dfd3;
   color: #345827;

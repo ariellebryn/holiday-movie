@@ -13,6 +13,15 @@ main {
   overflow-x: visible;
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 html {
   background-color: $light-green;
   color: $dark-green;
