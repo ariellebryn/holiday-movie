@@ -30,6 +30,25 @@ main {
   justify-content: center;
 }
 
+.credits,
+.credits a {
+  //   font-family: "Space Mono", monospace;
+  font-family: $detail-font;
+  font-size: 0.8rem;
+  color: $dark-green;
+  //   letter-spacing: 1px;
+  text-align: center;
+}
+
+.credits {
+  margin-top: 60px;
+}
+
+.credits .small,
+.credits .small a {
+  font-size: 0.8em;
+}
+
 .text {
   max-width: 750px;
   width: 100%;
@@ -140,7 +159,7 @@ button:active {
 
   span.randomize::after {
     font-size: 0.5rem;
-    margin-top: 1.4rem;
+    margin-top: 1.5rem;
   }
 
   span.situation::after {
