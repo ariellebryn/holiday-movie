@@ -13,7 +13,7 @@ html {
 
 main {
   padding: 20px;
-  padding-top: 100px;
+  padding-top: 40px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -99,6 +99,9 @@ button:active {
     margin-bottom: 50px;
     font-size: 1.2rem;
     line-height: 3rem; }
+
+  .generate_button button {
+    font-size: 1.1rem; }
 
   span.tj_item,
   span.character {
