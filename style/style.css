@@ -3,7 +3,7 @@ body,
 main {
   max-width: 100%;
   box-sizing: border-box;
-  overflow-x: hidden; }
+  overflow-x: visible; }
 
 html {
   background-color: #d2dfd3;
@@ -28,7 +28,7 @@ main {
   line-height: 3.5rem;
   font-family: "Piazzolla", serif;
   margin-bottom: 100px;
-  overflow-x: hidden; }
+  overflow-x: visible; }
 
 span.randomize {
   border-bottom: 2px solid #345827;
@@ -78,9 +78,11 @@ span.sentence_break {
   font-size: 1.3rem;
   font-weight: 400;
   transition: 0.2s;
-  background-color: #f1f1f1; }
+  background-color: #f1f1f1;
+  margin-bottom: 50px; }
 
-.generate_button button:hover {
+.generate_button button:hover,
+.generate_button button:active {
   box-shadow: 8px 10px 0 0 #212121; }
 
 button:focus {
@@ -97,6 +99,10 @@ button:active {
     margin-bottom: 50px;
     font-size: 1.2rem;
     line-height: 3rem; }
+
+  span.tj_item,
+  span.character {
+    white-space: normal; }
 
   span.randomize::after {
     font-size: 0.5rem;
@@ -119,7 +125,7 @@ button:active {
 .title {
   font-family: "Langar", serif;
   font-size: 4em;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */
