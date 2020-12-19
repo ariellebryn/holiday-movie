@@ -23,8 +23,8 @@ main {
   max-width: 750px;
   width: 100%;
   text-align: center;
-  font-size: 1.5em;
-  line-height: 2.5em;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
   font-family: "Piazzolla", serif;
   margin-bottom: 100px; }
 
@@ -34,14 +34,14 @@ span.randomize {
   position: relative; }
 
 span.randomize::after {
-  font-size: 0.5em;
+  font-size: 0.6rem;
   position: absolute;
-  margin-top: 2.4em;
+  margin-top: 1.7rem;
   text-transform: uppercase;
   font-family: "Space Grotesk", Arial, Helvetica, sans-serif; }
 
 span.character::after {
-  margin-left: -72px;
+  margin-left: -55px;
   content: "character"; }
 
 span.adjective::after {
@@ -72,9 +72,10 @@ span.sentence_break {
   border: 1px solid #212121;
   box-shadow: 3px 4px 0 0 #212121;
   font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   font-weight: 400;
-  transition: 0.2s; }
+  transition: 0.2s;
+  background-color: #f1f1f1; }
 
 .generate_button button:hover {
   box-shadow: 8px 10px 0 0 #212121; }

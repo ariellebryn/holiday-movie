@@ -33,8 +33,8 @@ main {
   max-width: 750px;
   width: 100%;
   text-align: center;
-  font-size: 1.5em;
-  line-height: 2.5em;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
   font-family: $body-font;
   margin-bottom: 100px;
 }
@@ -46,15 +46,15 @@ span.randomize {
 }
 
 span.randomize::after {
-  font-size: 0.5em;
+  font-size: 0.6rem;
   position: absolute;
-  margin-top: 2.4em;
+  margin-top: 1.7rem;
   text-transform: uppercase;
   font-family: $detail-font;
 }
 
 span.character::after {
-  margin-left: -72px;
+  margin-left: -55px;
   content: "character";
 }
 
@@ -92,9 +92,10 @@ span.sentence_break {
   border: 1px solid $dark;
   box-shadow: 3px 4px 0 0 $dark;
   font-family: $detail-font;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   font-weight: 400;
   transition: 0.2s;
+  background-color: rgb(241, 241, 241);
 }
 
 .generate_button button:hover {
