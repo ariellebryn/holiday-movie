@@ -2,7 +2,8 @@ html,
 body,
 main {
   width: 100%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
 html {
   background-color: #d2dfd3;
