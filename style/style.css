@@ -91,7 +91,13 @@ button:active {
     padding: 40px; }
 
   .text {
-    margin-bottom: 50px; } }
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+    line-height: 3rem; }
+
+  span.randomize::after {
+    font-size: 0.5rem;
+    margin-top: 1.4rem; } }
 .characters {
   height: 300px;
   width: 200px;
