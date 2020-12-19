@@ -127,7 +127,10 @@ button:active {
   }
 
   .generate_button button {
-    font-size: 1.1rem;
+    // font-size: 1.1rem;
+    font-size: 0.8rem;
+    // font-weight: 600;
+    text-transform: uppercase;
   }
 
   span.tj_item,

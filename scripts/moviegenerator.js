@@ -121,6 +121,13 @@ switch(identity) {
 theyMeet.innerHTML = value;
 }
 
+function scrollToTop() {
+    scroll({
+        top: 0,
+        behavior: "smooth"
+      });
+}
+
 var generateMovie = () => {
     if (Object.keys(storyInfo).length === 0) {
         return;
@@ -167,6 +174,8 @@ var generateMovie = () => {
     // Special case for the "they meet..." phrase, 
     // which isn't randomizable but needs specific pronounds
     replaceTheyMeet(characters[0].identity);
+
+    scrollToTop();
 };
 
 d3.json('./data/story.json')

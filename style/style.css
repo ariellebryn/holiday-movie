@@ -101,7 +101,8 @@ button:active {
     line-height: 3rem; }
 
   .generate_button button {
-    font-size: 1.1rem; }
+    font-size: 0.8rem;
+    text-transform: uppercase; }
 
   span.tj_item,
   span.character {
