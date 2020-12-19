@@ -35,6 +35,10 @@ span.randomize {
   margin: 0 5px;
   position: relative; }
 
+span.tj_item,
+span.character {
+  white-space: nowrap; }
+
 span.randomize::after {
   font-size: 0.6rem;
   position: absolute;
@@ -47,24 +51,21 @@ span.character::after {
   content: "character"; }
 
 span.adjective::after {
-  margin-left: -60px;
+  margin-left: -50px;
   content: "adjective"; }
 
 span.occupation::after {
-  margin-left: -70px;
+  margin-left: -58px;
   content: "occupation"; }
 
 span.situation::after {
-  margin-left: -60px;
+  margin-left: -48px;
   content: "situation"; }
 
-span.attribute::after {
-  margin-left: -60px;
-  content: "attribute"; }
-
 span.tj_item::after {
-  margin-left: -110px;
-  content: "Trader Joe's Item"; }
+  margin-left: -90px;
+  content: "Trader Joe's Item";
+  white-space: nowrap; }
 
 span.sentence_break {
   margin-right: 0; }
@@ -99,28 +100,22 @@ button:active {
 
   span.randomize::after {
     font-size: 0.5rem;
-    margin-top: 1.4rem; } }
-.characters {
-  height: 300px;
-  width: 200px;
-  /* border-radius: 200px; */
-  background-color: #eee;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #628556;
-  /* background-image: url("inverse_speckle.jpg"); */
-  /* background-size: 100px 100px; */
-  background-repeat: repeat;
-  /* border-radius: 10px; */ }
+    margin-top: 1.4rem; }
 
-.head {
-  background-color: #e8b3af;
-  height: 100px;
-  width: 100px;
-  border-radius: 100px;
-  /* border: 3px solid #212121; */ }
+  span.situation::after {
+    margin-left: -44px; }
 
+  span.character::after {
+    margin-left: -50px; }
+
+  span.adjective::after {
+    margin-left: -50px; }
+
+  span.occupation::after {
+    margin-left: -54px; }
+
+  span.tj_item::after {
+    margin-left: -84px; } }
 .title {
   font-family: "Langar", serif;
   font-size: 4em;

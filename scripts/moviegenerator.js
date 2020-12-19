@@ -155,6 +155,11 @@ var generateMovie = () => {
                 value = value[0].toUpperCase() + value.substring(1);
             }
 
+            // Helps stop the spans from breaking up on multiple lines badly
+            if (element.classList.contains("sentence_end")) {
+                value = value + ".";
+            }
+
             element.innerHTML = value;
         }
     }
