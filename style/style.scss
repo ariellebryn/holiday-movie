@@ -41,11 +41,9 @@ main {
 
 .credits,
 .credits a {
-  //   font-family: "Space Mono", monospace;
   font-family: $detail-font;
   font-size: 0.8rem;
   color: $dark-green;
-  //   letter-spacing: 1px;
   text-align: center;
 }
 
@@ -193,7 +191,6 @@ button:active {
 }
 
 .title {
-  font-family: "Langar", serif;
   font-size: 4em;
   margin-bottom: 20px;
   text-transform: uppercase;
